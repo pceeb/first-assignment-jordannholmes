@@ -8,20 +8,20 @@ The book is downloadable here: https://allesinalab.uchicago.edu/wp-content/uploa
 
 II. Answer the following question. What does this do?   
 
-1. ls [A-Z]*
-2. cp *.sh /tmp
-3. man pwd
-4. cd ~
-5. mkdir -p /test1/test2/test3 
-6. cp -r /tmp .
-7. ls | less
-8. head -n 24 test.txt » abc.txt
-9. echo "aaa" > aaa.txt
-10. ps -u sallesina
-11. top
-12. ls | grep .sh | xargs mv /tmp
-13. du -sk /home/* | sort -r -n | head -10
-14. sort -r names.txt
+1. ls [A-Z]* - Lists all files with only uppercase characters
+2. cp *.sh /tmp - Copies the temporary file, * means there are zero or more characters that follow, used to find specific directories or text files
+3. man pwd - Shows the help page of a command, in this case "pwd" which indicates a pathway
+4. cd ~ - Takes you back to your home directory
+5. mkdir -p /test1/test2/test3 - Creates multiple directories at once, would create a successive line of directories and files
+6. cp -r /tmp . - Copies a directory recursively, with all of the sub-directories and files, "tmp" indicates a temporary file
+7. ls | less - Lists the first two lines of files with a matching pattern, then progressively prints the files that are found and on the screen
+8. head -n 24 test.txt » abc.txt - Prints/Shows the first few lines of a text file, appends the output from test.txt to abc.txt, if abc.txt does not exist then it will be created 
+9. echo "aaa" > aaa.txt - Appends the "aaa" string to the already existing file aaa.txt
+10. ps -u sallesina - Gives a list of possible commands, rules, functions, and options, must type username with ps -u
+11. top - Indicates everyone that is working within the same node, Shows information including Command, Time, %MEM, %CPU, SHR, VIRT, NI, PR, and User
+12. ls | grep .sh | xargs mv /tmp - Lists the first two lines of files with a matching pattern, takes the file name passed to xargs and encodes the desired final file name, removes any unnecessary temporary files
+13. du -sk /home/* | sort -r -n | head -10 - Prints files in a current directory, sorts all lines using numeric values and head prints the first few lines of the sorted files, commands are used to find and read  particular files
+14. sort -r names.txt - Sort the names of the text files alphabetically, reverse the result of comparisons
 
 **IMPORTANT** 
 To submit your answers you must do the following:
